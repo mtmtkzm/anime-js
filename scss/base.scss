@@ -1,0 +1,22 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.demo {
+    width: 90%;
+    height: 70vh;
+    margin: 100px auto;
+    background-color: #eee;
+    position: relative;
+    h2 {
+        font-size: 16px;
+    }
+    .centering {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
