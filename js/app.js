@@ -1,8 +1,22 @@
 /* DEMO2
  *************** */
+anime({
+  targets: '.circle',
+  translateY: '30px',
+  delay: function(el, index) {
+    return index * 160;
+  },
+  direction: 'alternate',
+  elasticity: 100,
+  duration: 1000,
+  loop: true
+});
+
+/* DEMO2
+ *************** */
 var timeline = new mojs.Timeline();
 var circle = document.querySelector('#mo-toggle'),
-    parent = document.querySelector('#particle-burst');
+    parent = document.querySelector('#demo2');
 
 burstTween = new mojs.Burst({
     parent: parent,
