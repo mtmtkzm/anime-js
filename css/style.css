@@ -1,48 +1,68 @@
 body,
-html {
+html,
+h1,
+h2,
+section {
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+  color: #333; }
+
+a {
+  color: #333; }
+  a:hover {
+    text-decoration: none; }
+
 .demo {
   width: 90%;
+  min-width: 600px;
   height: 70vh;
+  min-height: 600px;
   margin: 100px auto;
   background-color: #eee;
   position: relative; }
   .demo h2 {
-    font-size: 16px; }
+    font-size: 48px;
+    position: absolute;
+    top: -35px;
+    left: -20px; }
   .demo .centering {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
 
-#demo3 .circle {
+.title {
+  background-color: #ddd;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center; }
+  .title h1 {
+    font-size: 48px; }
+  .title p {
+    font-size: 24px; }
+
+.github {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: url(../svg/github.svg) center center/100% no-repeat; }
+
+#demo1 .circle {
   width: 30px;
   height: 30px;
   margin: 10px;
   display: inline-block;
   border-radius: 50%; }
-  #demo3 .circle.green {
+  #demo1 .circle.green {
     background-color: #00B666; }
-  #demo3 .circle.yellow {
+  #demo1 .circle.yellow {
     background-color: #DBBB2E; }
-  #demo3 .circle.red {
+  #demo1 .circle.red {
     background-color: #F13B2D; }
-  #demo3 .circle.blue {
+  #demo1 .circle.blue {
     background-color: #3E6BF8; }
-
-#demo2 .before {
-  width: 50px;
-  height: 50px;
-  background-color: #aaa;
-  border-radius: 50%; }
-
-#demo1 {
-  background-color: #3E1F1A; }
-  #demo1 path {
-    fill: #fff; }
-  #demo1 .steam {
-    position: absolute;
-    top: -55px;
-    left: 10px; }

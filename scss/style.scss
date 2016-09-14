@@ -1,6 +1,6 @@
 @import 'base';
 
-#demo3 {
+#demo1 {
     .circle {
         width: 30px;
         height: 30px;
@@ -19,26 +19,5 @@
         &.blue {
             background-color: #3E6BF8;
         }
-    }
-}
-
-#demo2 {
-    .before {
-        width: 50px;
-        height: 50px;
-        background-color: #aaa;
-        border-radius: 50%;
-    }
-}
-
-#demo1 {
-    background-color: #3E1F1A;
-    path {
-        fill: #fff;
-    }
-    .steam {
-        position: absolute;
-        top: -55px;
-        left: 10px;
     }
 }
