@@ -26,6 +26,7 @@ var simpleLoadAnime = anime({
   },
   elasticity: 200,
   duration: 1000,
+  direction: 'alternate',
   loop: true
 });
 
