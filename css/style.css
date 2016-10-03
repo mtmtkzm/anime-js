@@ -52,6 +52,17 @@ a {
   height: 60px;
   background: url(../svg/github.svg) center center/100% no-repeat; }
 
+#demo3 .bounded-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+  #demo3 .bounded-box .bounded-letter {
+    position: relative;
+    margin: 0 3px; }
+    #demo3 .bounded-box .bounded-letter.bounded-g {
+      top: 20px; }
+
 #demo2 .circle2 {
   position: absolute;
   top: 0;
