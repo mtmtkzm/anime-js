@@ -1,13 +1,19 @@
 /* DEMO3
  *************** */
 var bounded = anime({
-  // targets: '.bounded-letter',
-  // translateY: '30px',
-  // height: '80%',
-  // direction: 'alternate',
-  // elasticity: 200,
-  // duration: 1000,
-  // loop: true
+  targets: '.bounded-letter-obj',
+  scaleY: '1.2',
+  translateY: '-30px',
+  direction: 'alternate',
+  elasticity: 300,
+  duration: 1500,
+  delay: function(el, index) {
+    return index * 200;
+  },
+  loop: true,
+  complete: function() {
+
+  }
 });
 
 
