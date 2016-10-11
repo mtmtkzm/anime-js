@@ -1,0 +1,97 @@
+body,
+html,
+h1,
+h2,
+section {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Alegreya Sans';
+  color: #333333; }
+
+a {
+  color: #333333;
+  transition: all .3s;
+  text-decoration: none; }
+  a:hover {
+    color: #6bba3d; }
+
+header {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #eeeeee; }
+  header h1 {
+    font-size: 42px;
+    letter-spacing: .06em; }
+  header p {
+    font-size: 21px; }
+
+.demo {
+  width: 90%;
+  min-width: 750px;
+  height: 70vh;
+  min-height: 550px;
+  margin: 100px auto;
+  background-color: #eeeeee;
+  position: relative; }
+  .demo h2 {
+    font-size: 52px;
+    position: absolute;
+    top: -26px;
+    left: -22px;
+    transform: rotate(-3deg); }
+  .demo .centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+footer {
+  text-align: center; }
+  footer .github {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(../svg/github.svg) center center/100% no-repeat; }
+
+#demo3 .bounded-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+  #demo3 .bounded-box .bounded-letter {
+    position: relative;
+    margin: 0 3px; }
+    #demo3 .bounded-box .bounded-letter.bounded-g {
+      top: 20px; }
+
+#demo2 .circle2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #6bba3d; }
+
+#demo1 .circle1 {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 50%; }
+  #demo1 .circle1.green {
+    background-color: #00B666; }
+  #demo1 .circle1.yellow {
+    background-color: #DBBB2E; }
+  #demo1 .circle1.red {
+    background-color: #F13B2D; }
+  #demo1 .circle1.blue {
+    background-color: #3E6BF8; }
