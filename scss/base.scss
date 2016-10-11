@@ -1,3 +1,7 @@
+$green: #6bba3d;
+$black: #333333;
+$gray: #eeeeee;
+
 body,
 html,
 h1,
@@ -9,29 +13,46 @@ section {
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    color: #333;
+    color: $black;
 }
 
 a {
-    color: #333;
+    color: $black;
+    transition: all .3s;
+    text-decoration: none;
     &:hover {
-        text-decoration: none;
+        color: $green;
+    }
+}
+
+header {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: $gray;
+    h1 {
+        font-size: 42px;
+        letter-spacing: .06em;
+    }
+    p {
+        font-size: 21px;
     }
 }
 
 .demo {
     width: 90%;
-    min-width: 600px;
+    min-width: 750px;
     height: 70vh;
-    min-height: 600px;
+    min-height: 550px;
     margin: 100px auto;
-    background-color: #eee;
+    background-color: $gray;
     position: relative;
     h2 {
-        font-size: 48px;
+        font-size: 52px;
         position: absolute;
-        top: -35px;
-        left: -20px;
+        top: -26px;
+        left: -22px;
+        transform: rotate(-3deg);
     }
     .centering {
         position: absolute;
@@ -41,24 +62,14 @@ a {
     }
 }
 
-.title {
-    background-color: #ddd;
-    width: 100%;
-    padding: 40px 0;
+footer {
     text-align: center;
-    h1 {
-        font-size: 48px;
+    .github {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: url(../svg/github.svg) center center/100% no-repeat;
     }
-    p {
-        font-size: 24px;
-    }
-}
-
-.github {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background: url(../svg/github.svg) center center/100% no-repeat;
 }
