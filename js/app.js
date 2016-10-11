@@ -1,21 +1,26 @@
 /* DEMO3
  *************** */
-var bounded = anime({
-  targets: '.bounded-letter-obj',
-  scaleY: '1.2',
-  translateY: '-30px',
-  direction: 'alternate',
-  elasticity: 300,
-  duration: 1500,
-  delay: function(el, index) {
-    return index * 200;
-  },
-  loop: true,
-  complete: function() {
+var boundedTarget = document.getElementsByClassName('bounded-letter-obj');
 
-  }
-});
+function boundedAnimation (i) {
+  var timeout = 100 + (i*100);
 
+  setTimeout(function() {
+    anime({
+      targets: boundedTarget[i],
+      scaleY: 1.25,
+      translateY: -20,
+      elasticity: 300,
+      duration: 1150,
+      direction: 'alternate',
+      loop: true
+    });
+  }, timeout);
+}
+
+for (var i=0; i<boundedTarget.length; i++) {
+    boundedAnimation(i);
+}
 
 /* DEMO2
  *************** */
