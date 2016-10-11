@@ -25,7 +25,7 @@ for (var i=0; i<boundedTarget.length; i++) {
 /* DEMO2
  *************** */
 var circleLength = 12;
-var r = 70;
+var r = 60;
 var container = document.querySelector('#container');
 
 for (var i=0; i<circleLength; i++) {
@@ -36,7 +36,7 @@ for (var i=0; i<circleLength; i++) {
 
 var simpleLoadAnime = anime({
   targets: '.circle2',
-  scale: [1, 1],
+  scale: [1.5, 0.75],
   translateX: function(element, index) {
     var dx = Math.floor(r * Math.sin(Math.PI*2/circleLength * index));
     return dx + 'px';
@@ -46,9 +46,9 @@ var simpleLoadAnime = anime({
     return dy + 'px';
   },
   delay: function(element, index) {
-    return index * 100;
+    return 75 * index;
   },
-  elasticity: 200,
+  elasticity: 150,
   duration: 1000,
   direction: 'alternate',
   loop: true
