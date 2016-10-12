@@ -26,7 +26,7 @@ for (var i=0; i<boundedTarget.length; i++) {
  *************** */
 var circleLength = 12;
 var r = 60;
-var container = document.querySelector('#container');
+var container = document.querySelector('.runnning-box');
 
 for (var i=0; i<circleLength; i++) {
   var div = document.createElement('div');
