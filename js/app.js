@@ -1,3 +1,29 @@
+/* DEMO4
+ *************** */
+var rippleTarget = document.getElementsByClassName('ripple');
+var rippleDuration = 1000;
+function rippleAnimation (i) {
+  setTimeout(function() {
+    var scaleRipple = anime({
+      targets: rippleTarget[i],
+      width: 120,
+      height: 120,
+      top: '-60px',
+      left: '-60px',
+      opacity: 1,
+      elasticity: 0,
+      duration: rippleDuration,
+      easing: 'easeInOutQuad',
+      direction: 'alternate',
+      loop: true
+    });
+  }, rippleDuration * i);
+}
+
+for (var i=0; i<rippleTarget.length; i++) {
+  rippleAnimation(i);
+}
+
 /* DEMO3
  *************** */
 var boundedTarget = document.getElementsByClassName('bounded-letter-obj');

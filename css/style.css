@@ -8,10 +8,10 @@ section {
 
 body {
   font-family: 'Alegreya Sans';
-  color: #333333; }
+  color: #555; }
 
 a {
-  color: #333333;
+  color: #555;
   transition: all .3s;
   text-decoration: none; }
   a:hover {
@@ -21,7 +21,7 @@ header {
   width: 100%;
   padding: 40px 0;
   text-align: center;
-  background-color: #eeeeee; }
+  background-color: #eee; }
   header h1 {
     font-size: 42px;
     letter-spacing: .06em; }
@@ -34,14 +34,23 @@ header {
   height: 70vh;
   min-height: 550px;
   margin: 100px auto;
-  background-color: #eeeeee;
-  position: relative; }
-  .demo h2 {
-    font-size: 52px;
+  background-color: #eee;
+  position: relative;
+  counter-increment: number; }
+  .demo::before {
+    content: counter(number);
     position: absolute;
-    top: -26px;
+    top: -65px;
+    left: -25px;
+    font-size: 100px;
+    color: #555; }
+  .demo h2 {
+    position: absolute;
+    top: 30px;
     left: -22px;
-    transform: rotate(-3deg); }
+    font-size: 56px;
+    letter-spacing: .075em;
+    transform: rotate(-5deg); }
   .demo .centering {
     position: absolute;
     top: 50%;
@@ -57,6 +66,23 @@ footer {
     width: 60px;
     height: 60px;
     background: url(../svg/github.svg) center center/100% no-repeat; }
+
+#demo4 {
+  position: relative; }
+  #demo4 .ripple-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #demo4 .ripple-box .ripple {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(87, 157, 204, 0.5);
+      opacity: .25;
+      border-radius: 50%; }
 
 #demo3 .bounded-box {
   position: absolute;

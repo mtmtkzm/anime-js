@@ -1,5 +1,26 @@
 @import 'base';
 
+#demo4 {
+  position: relative;
+  .ripple-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .ripple {
+      position: absolute;
+      $ripple-size: 20px;
+      top: $ripple-size/-2;
+      left: $ripple-size/-2;
+      width: $ripple-size;
+      height: $ripple-size;
+      background-color: rgba(87, 157, 204, .5);
+      opacity: .25;
+      border-radius: 50%;
+    }
+  }
+}
+
 #demo3 {
   .bounded-box {
     position: absolute;
