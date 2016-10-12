@@ -1,6 +1,6 @@
 $green: #6bba3d;
-$black: #333333;
-$gray: #eeeeee;
+$black: #555;
+$gray: #eee;
 
 body,
 html,
@@ -47,12 +47,22 @@ header {
     margin: 100px auto;
     background-color: $gray;
     position: relative;
-    h2 {
-        font-size: 52px;
+    counter-increment: number;
+    &::before {
+        content: counter(number);
         position: absolute;
-        top: -26px;
+        top: -65px;
+        left: -25px;
+        font-size: 100px;
+        color: $black;
+    }
+    h2 {
+        position: absolute;
+        top: 30px;
         left: -22px;
-        transform: rotate(-3deg);
+        font-size: 56px;
+        letter-spacing: .075em;
+        transform: rotate(-5deg);
     }
     .centering {
         position: absolute;
