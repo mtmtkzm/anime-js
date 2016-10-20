@@ -1,3 +1,7 @@
+/* DEMO5
+ *************** */
+
+
 /* DEMO4
  *************** */
 var rippleTarget = document.getElementsByClassName('ripple');
